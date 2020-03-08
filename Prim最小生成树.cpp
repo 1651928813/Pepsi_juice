@@ -35,6 +35,7 @@ void Prim(int point)
 				for(j=0;j<n;j++)
 				{
 					if(map[i][j]<=min&&map[i][j]>0&&parent[j]==-2)                 //记录最短且终点未被访问的边的信息 
+					{ 
 						min1=i;
 						min2=j;
 						min=map[i][j];
@@ -46,7 +47,8 @@ void Prim(int point)
 			end++;
 			min=1e5;
 	}
-}
+} 
+
 
 int main()
 {
